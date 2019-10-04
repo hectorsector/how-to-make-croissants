@@ -1,0 +1,17 @@
+title: how-to-make-croissants
+tagline: A brand new course on Learning Lab
+description: The best course for learning how to make the best croissants.
+template:
+  repo: how-to-make-croissants-template
+  name: how-to-make-croissants
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
